@@ -6,3 +6,7 @@
 <h1 class="text-3xl font-bold underline">
   Hello world!
 </h1>
+
+<%= button_to destroy_user_session_path, method: :delete, data: { turbo: false } do %>
+  Log Out
+<% end %>
